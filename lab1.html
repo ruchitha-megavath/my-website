@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background-color: beige;
+            border: 2px solid brown;
+            /* border-bottom: none; */
+             border-bottom: none;
+        }
+        header h1{
+            margin: 0;
+             padding: 10px;
+        }
+        nav{
+            border: 2px solid black;
+            background-color: gray;
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+           
+
+        }
+        nav a{
+            color: aliceblue;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover{
+            /* text-decoration: underline; */
+            border: 2px solid brown;
+            font-size: 20px;
+            border-radius: 20%;
+            background-color: beige;
+            color: black;
+        }
+         img {
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            max-width: 100%;
+            height: auto;
+        }
+        #f1{
+            
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Personal Portfolio Webpage</h1>
+    </header>
+    <nav >
+        <a href="#Home" >Home</a>
+        <a href="#About" >About</a>
+        <a href="#Skills" >Skills</a>
+        <a href="#Projects" >Projects</a>
+        <a href="#Contact" >Contact</a>
+    </nav>
+    
+    <div id="Home">
+        <h1> M R- Portfolio</h1>
+        <img src="banner.png" alt="Banner Image" >
+    </div>
+    <section id="About">
+        <h2>About Me</h2>
+        <p>Hello, I am <b>Megh R</b>, a passionate <b>Web Developer</b>.</p>
+    </section>
+    <section>
+        <h2>My Projects</h2>
+        <ul>
+            <li><a href="#">Project 1</a></li>
+            <li><a href="#">Project 2</a></li>
+            <li><a href="#">Project 3</a></li>
+        </ul>
+    </section>
+    <section id="Contact">
+        <h2>&copy Contact Me</h2>
+        <form id="f1">
+            Name: <input type="text"><br><br>
+            Email: <input type="email"><br><br>
+            Message: <textarea></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+</body>
+</html>
